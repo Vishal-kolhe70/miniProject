@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hstyle.css">
+    <style>
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content:flex-start;
+            flex-wrap: wrap;
+        }
+
+        body{
+            margin: 0;
+            background-color: white;
+            padding: 0;
+        }
+
+        .card{
+            width: 16%;
+            margin: 20px 0;
+            margin-left: 50px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        img{
+            border-radius: 3px;
+            margin: 7px;
+            height:250px;
+            width:230px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+        
+        .card button{
+            width: 200px;
+            padding: 4px;
+            font-size: 19px;
+            margin-bottom: 15px;
+            color: rgb(228, 230, 231);
+            margin-left: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(15, 114, 15, 0.918);
+        }
+
+        .card button:hover{
+            background-color: rgba(13, 153, 13, 0.925);
+        }
+
+        p{
+            font-size: 18px;
+            margin: 6px 8px;
+            padding: 5px 3px;
+            border-radius: 3px;
+        }
+
+        .info p{
+            margin: 0px 8px;
+            padding: 2px 3px;
+        }
+
+        .content button{
+            margin-top: 13px;
+        }
+
+        input{
+            width: 30%;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            border: 2px solid rgba(29, 29, 203, 0.774); 
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FreshHarvest</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="veg.html">Vegetables</a>
+        <a href="about.html">About US</a>
+        <button class="btn1" style="margin-left: 69%;">login</button>
+        <button class="btn2">Register</button>
+    </nav>
+
+    <div style="margin-top: 120px;margin-bottom: 50px;">
+        <form action="" style="text-align: center;margin-top: 5px;">
+            <input type="text" placeholder="search for vegetables...">
+        </form>
+
+        <div class="container">
+            <div class="card">
+                <img src="image/cauliflower.png" alt="">
+                <div class="content">
+                    <p>Cauliflower</p>
+                    <div class="info">
+                        <p style="color: gray;">1pc</p>
+                        <p><b>₹80</b></p>
+                    </div>
+                    <button >Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/green capsicum.png" alt="">
+                <div class="content">
+                    <p>Green Capsicum</p>
+                    <div class="info">
+                        <p style="color: gray;">250gm</p>
+                        <p><b>₹60</b></p>
+                    </div>
+                    <button >Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/tomato.png" alt="">
+                <div class="content">
+                    <p>Hybrid Tomato</p>
+                    <div class="info">
+                        <p style="color: gray;">1Kg</p>
+                        <p><b>₹70</b></p>
+                    </div>
+                    <button >Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/carrot.png" alt="">
+                <div class="content">
+                    <p>Carrot</p>
+                    <div class="info">
+                        <p style="color: gray;">500gm</p>
+                        <p><b>₹70</b></p>
+                    </div>
+                    <button >Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/garlic.png" alt="">
+                <div class="content">
+                    <p>Garlic</p>
+                    <div class="info">
+                        <p style="color: gray;">250gm</p>
+                        <p><b>₹80</b></p>
+                    </div>
+                    <button >Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/peas.png" alt="">
+                <div class="content">
+                    <p>Peas</p>
+                    <div class="info">
+                        <p style="color: gray;">250gm</p>
+                        <p><b>₹60</b></p>
+                    </div>
+                    <button >Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/bhindi.png" alt="">
+                <div class="content">
+                    <p>Bhindi</p>
+                    <div class="info">
+                        <p style="color: gray;">250gm</p>
+                        <p><b>₹50</b></p>
+                    </div>
+                    <button >Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/broccoli.png" alt="">
+                <div class="content">
+                    <p>Broccoli</p>
+                    <div class="info">
+                        <p style="color: gray;">300gm - 350gm</p>
+                        <p><b>₹190</b></p>
+                    </div>
+                    <button >Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/potato.png" alt="">
+                <div class="content">
+                    <p>Potato</p>
+                    <div class="info">
+                        <p style="color: gray;">1Kg</p>
+                        <p><b>₹70</b></p>
+                    </div>
+                    <button >Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/onion.png" alt="">
+                <div class="content">
+                    <p>Onion</p>
+                    <div class="info">
+                        <p style="color: gray;">1Kg</p>
+                        <p><b>₹80</b></p>
+                    </div>
+                    <button >Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FreshHarvest. All rights reserved.</p>
+    </footer>
+</body>
+</html>
